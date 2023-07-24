@@ -13,10 +13,18 @@ pacman -S --noconfirm netctl
 WIFI_SSID="YOUR_WIFI_SSID"
 WIFI_PASSPHRASE="YOUR_WIFI_PASSPHRASE"
 
+# Find the wireless interface
+WLAN_INTERFACE=$(ip link | awk '/state UP/ {gsub(":", "", $2); print $2}')
+
+if [[ -z $WLAN_INTERFACE ]]; then
+    echo "No wireless interface found. Please check your Wi-Fi adapter."
+    exit 1
+fi
+
 # Create a netctl profile for the Wi-Fi network
 cat > "/etc/netctl/$WIFI_SSID" <<EOF
 Description='Your Wi-Fi Network'
-Interface=wlan0
+Interface=$WLAN_INTERFACE
 Connection=wireless
 Security=wpa
 ESSID='$WIFI_SSID'
