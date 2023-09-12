@@ -1,0 +1,6 @@
+brave
+vivaldi
+enpass-bin
+code
+steam
+discord
