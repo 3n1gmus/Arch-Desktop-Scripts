@@ -4,3 +4,4 @@ enpass-bin
 code
 steam
 discord
+nextcloud-client
