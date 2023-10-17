@@ -5,3 +5,4 @@ code
 steam
 discord
 nextcloud-client
+filezilla
