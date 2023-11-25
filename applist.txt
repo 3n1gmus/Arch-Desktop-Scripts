@@ -6,3 +6,8 @@ steam
 discord
 nextcloud-client
 filezilla
+openrgb
+heroic-games-launcher-bin
+lutris
+visual-studio-code-bin
+discover
