@@ -11,3 +11,4 @@ heroic-games-launcher-bin
 lutris
 visual-studio-code-bin
 discover
+gimp
