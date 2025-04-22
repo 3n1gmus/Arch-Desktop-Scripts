@@ -12,3 +12,4 @@ lutris
 visual-studio-code-bin
 discover
 gimp
+flameshot
